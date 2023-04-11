@@ -1,0 +1,67 @@
+{
+  "$id": "https://github.com/projectronin/contract-event-prodeng-questionnaire-response/blob/main/v1/prodeng-questionnaire-response-v1.schema.json",
+  "title": "Interop Resource Retrieve",
+  "description": "This event represents patient questionnaire response.",
+  "type": "object",
+  "properties": {
+    "patientId": {
+      "description": "The ID of the patient that the user belongs to",
+      "type": "string"
+    },
+    "tenantId": {
+      "description": "The ID of the tenant for which the patient belongs to",
+      "type": "string"
+    },
+    "surveyResponseId": {
+      "description": "The survey response id.",
+      "type": "string"
+    },
+    "symptoms": {
+      "description": "Patient provided symptoms.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      }
+    },
+    "otherSymptoms": {
+      "description": "Other patient provided symptoms that fall outside of the pre-provided list of symptoms.",
+      "type": "string"
+    },
+    "alertState": {
+      "description": "The state of alert that the symptom report produced.",
+      "enum": ["non-alerted", "alerted", "er"]
+    },
+    "qol": {
+      "description": "User provided quality of life within a range of 0-100.",
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "completedOn": {
+      "description": "The date when the survey was submitted by the patient.",
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "patientId",
+    "tenantId",
+    "surveyResponseId",
+    "symptoms",
+    "alertState",
+    "qol",
+    "completedOn"
+  ]
+}

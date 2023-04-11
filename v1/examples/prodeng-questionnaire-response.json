@@ -1,0 +1,16 @@
+{
+    "patientId": "14364",
+    "tenantId": "h387afy7",
+    "surveyResponseId": "212",
+    "symptoms": [{
+        "id": "28",
+        "name": "fatigue"
+    }, {
+        "id": "29",
+        "name": "nausea"
+    }],
+    "otherSymptoms": "blurry vision, sore throat",
+    "alertState": "non-alerted",
+    "qol": 50,
+    "completedOn": "2022-09-13T12:14:15"
+}
