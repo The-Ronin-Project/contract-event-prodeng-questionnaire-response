@@ -1,11 +1,11 @@
 {
   "$id": "https://github.com/projectronin/contract-event-prodeng-questionnaire-response/blob/main/v1/prodeng-questionnaire-response-v1.schema.json",
-  "title": "Interop Resource Retrieve",
+  "title": "ProdEng Questionnaire Response",
   "description": "This event represents patient questionnaire response.",
   "type": "object",
   "properties": {
     "patientId": {
-      "description": "The ID of the patient that the user belongs to",
+      "description": "The ID of the patient aka UDP ID",
       "type": "string"
     },
     "tenantId": {
@@ -17,30 +17,18 @@
       "type": "string"
     },
     "symptoms": {
-      "description": "Patient provided symptoms.",
+      "description": "Patient provided list of symptoms.",
       "type": "array",
       "items": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string"
-          },
-          "name": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "id",
-          "name"
-        ]
+        "type": "string"
       }
     },
     "otherSymptoms": {
-      "description": "Other patient provided symptoms that fall outside of the pre-provided list of symptoms.",
+      "description": "Other patient provided symptoms that fall outside of the pre-provided list, aka write-in symptoms",
       "type": "string"
     },
     "alertState": {
-      "description": "The state of alert that the symptom report produced.",
+      "description": "The alert state that the symptom report produced.",
       "enum": ["non-alerted", "alerted", "er"]
     },
     "qol": {
@@ -50,7 +38,7 @@
       "maximum": 100
     },
     "completedOn": {
-      "description": "The date when the survey was submitted by the patient.",
+      "description": "The datetime when the survey was submitted by the patient.",
       "type": "string",
       "format": "date-time"
     }
