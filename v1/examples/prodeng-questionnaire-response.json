@@ -2,13 +2,10 @@
     "patientId": "14364",
     "tenantId": "h387afy7",
     "surveyResponseId": "212",
-    "symptoms": [{
-        "id": "28",
-        "name": "fatigue"
-    }, {
-        "id": "29",
-        "name": "nausea"
-    }],
+    "symptoms": [
+        "fatigue",
+        "nausea"
+    ],
     "otherSymptoms": "blurry vision, sore throat",
     "alertState": "non-alerted",
     "qol": 50,
