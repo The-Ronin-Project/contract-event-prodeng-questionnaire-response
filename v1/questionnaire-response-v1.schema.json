@@ -9,7 +9,7 @@
       "type": "string"
     },
     "tenantId": {
-      "description": "The ID of the tenant for which the patient belongs to",
+      "description": "The ID of the tenant to which the patient belongs to",
       "type": "string"
     },
     "surveyResponseId": {
@@ -29,7 +29,7 @@
     },
     "alertState": {
       "description": "The alert state that the symptom report produced.",
-      "enum": ["non-alerted", "alerted", "er"]
+      "enum": ["NON_ALERT", "ALERT", "HIGH_ALERT"]
     },
     "qol": {
       "description": "User provided quality of life within a range of 0-100.",
