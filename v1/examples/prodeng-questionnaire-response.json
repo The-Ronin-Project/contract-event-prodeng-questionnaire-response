@@ -7,7 +7,7 @@
         "nausea"
     ],
     "otherSymptoms": "blurry vision, sore throat",
-    "alertState": "non-alerted",
+    "alertState": "HIGH_ALERT",
     "qol": 50,
     "completedOn": "2022-09-13T12:14:15"
 }
