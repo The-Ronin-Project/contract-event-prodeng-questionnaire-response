@@ -4,7 +4,7 @@
   "description": "This event represents patient questionnaire response.",
   "type": "object",
   "properties": {
-    "patientId": {
+    "patientUdpId": {
       "description": "The ID of the patient aka UDP ID",
       "type": "string"
     },
@@ -44,7 +44,7 @@
     }
   },
   "required": [
-    "patientId",
+    "patientUdpId",
     "tenantId",
     "surveyResponseId",
     "symptoms",
