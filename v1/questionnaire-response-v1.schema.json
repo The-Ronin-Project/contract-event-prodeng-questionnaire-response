@@ -4,7 +4,7 @@
   "description": "This event represents patient questionnaire response.",
   "type": "object",
   "properties": {
-    "patientUdpId": {
+    "patientId": {
       "description": "The ID of the patient aka UDP ID",
       "type": "string"
     },
@@ -14,7 +14,8 @@
     },
     "surveyResponseId": {
       "description": "The survey response id.",
-      "type": "string"
+      "type": "integer",
+      "format": "int64"
     },
     "symptoms": {
       "description": "Patient provided list of symptoms.",
@@ -23,7 +24,7 @@
         "type": "string"
       }
     },
-    "otherSymptoms": {
+    "writeIn": {
       "description": "Other patient provided symptoms that fall outside of the pre-provided list, aka write-in symptoms",
       "type": "string"
     },
@@ -44,7 +45,7 @@
     }
   },
   "required": [
-    "patientUdpId",
+    "patientId",
     "tenantId",
     "surveyResponseId",
     "symptoms",

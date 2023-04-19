@@ -1,12 +1,12 @@
 {
-    "patientUdpId": "14364",
+    "patientId": "14364",
     "tenantId": "h387afy7",
-    "surveyResponseId": "212",
+    "surveyResponseId": 212,
     "symptoms": [
         "fatigue",
         "nausea"
     ],
-    "otherSymptoms": "blurry vision, sore throat",
+    "writeIn": "blurry vision, sore throat",
     "alertState": "HIGH_ALERT",
     "qol": 50,
     "completedOn": "2022-09-13T12:14:15"
