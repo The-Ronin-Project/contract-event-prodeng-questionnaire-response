@@ -50,7 +50,6 @@
     "surveyResponseId",
     "symptoms",
     "alertState",
-    "qol",
     "completedOn"
   ]
 }
