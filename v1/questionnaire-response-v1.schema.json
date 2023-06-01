@@ -6,16 +6,19 @@
   "properties": {
     "patientId": {
       "description": "The ID of the patient aka UDP ID",
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "tenantId": {
       "description": "The ID of the tenant to which the patient belongs to",
-      "type": "string"
+      "type": "string",
+      "minLength": 1
     },
     "surveyResponseId": {
       "description": "The survey response id.",
       "type": "integer",
-      "format": "int64"
+      "format": "int64",
+      "minLength": 1
     },
     "symptoms": {
       "description": "Patient provided list of symptoms.",
